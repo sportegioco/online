@@ -1439,7 +1439,7 @@ L.Control.Menubar = L.Control.extend({
 			self._executeAction(item);
 		}
 
-		if (!window.mode.isMobile() && $(item).data('id') !== 'insertcomment' && self && self.map)
+		if (!window.mode.isMobile() && $(item).data('id') !== 'insertcomment' && self && self._map)
 			self._map.focus();
 	},
 
