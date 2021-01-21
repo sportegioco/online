@@ -326,6 +326,9 @@ L.Control.TopToolbar = L.Control.extend({
 		toolbar.bind('touchstart', function() {
 			w2ui['editbar'].touchStarted = true;
 		});
+
+		this.map.createFontSelector('.fonts-select');
+		w2ui['editbar'].resize();
 	},
 
 	onDocLayerInit: function() {
