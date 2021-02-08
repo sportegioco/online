@@ -177,6 +177,7 @@ L.Control.UIManager = L.Control.extend({
 
 		this.map.menubar._onDocLayerInit();
 		this.map.topToolbar.onDocLayerInit();
+		this.map.sendInitUNOCommands();
 		this.map._docLayer._resetClientVisArea();
 		this.map._docLayer._requestNewTiles();
 
@@ -207,6 +208,7 @@ L.Control.UIManager = L.Control.extend({
 		}
 		$('#map').addClass('notebookbar-opened');
 
+		this.map.sendInitUNOCommands();
 		this.map._docLayer._resetClientVisArea();
 		this.map._docLayer._requestNewTiles();
 	},
